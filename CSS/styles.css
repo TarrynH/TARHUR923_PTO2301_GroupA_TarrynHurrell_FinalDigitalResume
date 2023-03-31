@@ -9,7 +9,6 @@ body {
 }
 
 
-
 .hero-image {
     background-image:  url('/images/geo.jpeg');
     height: 60vh;  
@@ -258,6 +257,7 @@ img {
 .type {
     padding-right: 5vw;
     text-align: left;
+    font-weight: 600;
 }
 
 .answer {
