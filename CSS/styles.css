@@ -1,6 +1,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     height: 100%;
+    background-color: #e5dfff;
+    color: #101740;
 }
 
 .hero-image {
@@ -34,13 +36,13 @@ nav a:hover {
 }
 
 nav {
-    border: 1px solid #5857A5;
+    border: 1px solid #C17E87;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 12vh;
+    height: 15vh;
     align-items: center;
-    background-color:#171547;
+    background-color:#0D1226;
     position: sticky;
 }
 
@@ -55,22 +57,26 @@ nav {
 
 .aboutme {
     display: grid;
-    grid-template-columns: 1.2fr 4fr 4fr;
-    height: 70vh;
-    border-bottom: 10vh solid #D74B27;
-    border-top: 10vh solid #D74B27;
+    grid-template-columns: 15% 42.5% 42.5%;
+    height: auto;
+    border: 1px solid #C17E87;
+    position: relative; 
 }
 
 #about-heading {
+    grid-row: 1 / 3;
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: #171547;
-    border-right: 1px solid black;
+    background-color:#0D1226;
     color: aliceblue;
-    padding: 20px;
-    border: 1px solid #5857A5;
+    justify-content: center;
+    border: 1px solid #C17E87; 
+}
 
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #picture {
@@ -79,7 +85,6 @@ nav {
     align-items: center;
     text-align: center;
     padding: 20px;
-
 }
 
 #intro {
@@ -88,15 +93,15 @@ nav {
     align-items: center;
     text-align: center;
     padding: 20px;
-    border-right: 0.5px solid #D74B27;
 }
 
 .education {
     display: grid;
-    grid-template-columns: 1.2fr 4fr 4fr;
-    grid-template-rows: 1fr 1fr;
-    height: 70vh;
-    border-bottom: 10vh solid #D74B27;
+    grid-template-columns: 15% 42.5% 42.5%;
+    grid-template-rows: auto;
+    height: auto;
+    position: relative;
+    border: 1px solid #C17E87;
 }
 
 .education a {
@@ -109,30 +114,32 @@ nav {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     text-align: center;
-    background-color: #171547;
-    padding: 20px;
+    justify-content: center;
+    background-color:#0D1226;
     color: aliceblue;
-    border: 1px solid #5857A5;
+    border: 1px solid #C17E87; 
 }
 
 .educ-dates {
     text-align: center;
     padding: 20px;
-    border: 0.5px solid #D74B27;
 }
+
 .educ-items {
     text-align: left;
     padding: 20px;
-    border: 0.5px solid #D74B27;
+}
+.educ-items ul {
+    list-style-type:square ;
 }
 
 
 .experience {
     display: grid;
-    grid-template-columns: 1.2fr 4fr 4fr;
-    grid-template-rows: 1fr 1fr;
-    height: 80vh;
-    border-bottom: 10vh solid #925C50;
+    grid-template-columns: 15% 42.5% 42.5%;
+    grid-template-rows: auto;
+    height: auto;
+    border: 1px solid #C17E87;  
 }
 
 #exp-heading {
@@ -141,70 +148,140 @@ nav {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     text-align: center;
-    background-color: #171547;
-    padding: 20px;
+    background-color:#0D1226;
+    justify-content: center;
     color: aliceblue;
-    border: 1px solid #5857A5;
+    border: 1px solid #C17E87;
 }
 
 .exp-dates {
-    text-align: center;
-    padding: 20px;
-    border: 0.5px solid #D74B27;
+    text-align: center; 
+    padding: 20px; 
 }
+
 .exp-items {
-    text-align: left;
+    text-align: left; 
     padding: 20px;
-    border: 0.5px solid #D74B27;
+}
+
+.exp-items ul {
+    list-style-type: square;
 }
 
 .skills {
     display: grid;
-    grid-template-columns: 1.2fr 4fr 4fr;
-    grid-template-rows: 1fr 1fr;
-    height: 70vh;
-    border-bottom: 10vh solid #925C50;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1;
+    height: auto;
+    border: 1px solid #C17E87;
 }
 
 #skills-heading {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-row: 1 / 3;
+    grid-row: 1 / 5;
     grid-column: 1 / 2;
     text-align: center;
-    background-color: #171547;
-    padding: 20px;
+    background-color:#0D1226; 
     color: aliceblue;
-    border: 1px solid #5857A5;
+    border: 1px solid #C17E87; 
 }
 
-#languages {
+.types {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: left;
     padding: 20px;
-    border: 0.5px solid #925C50;
 }
 
-#tools {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border: 0.5px solid #925C50;
+
+.contact {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 1 ;
+    height: auto;
+    border: 1px solid #C17E87; 
 }
-#software {
+
+#contact-heading {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
-    border: 0.5px solid #925C50;
+    text-align: center;
+    background-color:#0D1226;
+    color: aliceblue;
+    justify-content: center;
+    border: 1px solid #C17E87; 
 }
-#other {
+
+ .mode {
     display: flex;
+    flex-direction: column;
+    text-align: left ;
     justify-content: center;
-    align-items: center;
     padding: 20px;
-    border: 0.5px solid #925C50;
+ }
+
+
+
+
+
+@media only screen and (max-width:768px) /**** mobile ****/
+{
+
+    body {
+        font-size: 12px;
+    }
+
+    .aboutme {
+        grid-template-rows: auto;
+    }
+
+    #picture {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
+
+    #intro {
+       grid-column: 2 / 4;
+       grid-row: 2 / 3;
+    }
+
+    .options {
+        font-size: 13px;
+        
+    }
+}
+
+    
+@media only screen and (min-width:769px) and (max-width:1024px) /**** tablet ****/
+{
+    body {
+        font-size: 12px;
+    }
+
+
+    .options {
+        font-size: 18px 
+    }
+
+}
+
+
+@media only screen and (min-width:1025px) and (max-width:1215px) /**** laptop ****/
+{
+    body {
+        font-size: 14px;
+    }
+
+    .options {font-size: 18px }
+    }
+
+@media only screen and (min-width:1215px) /**** bigger than laptop ****/
+{
+
+    body {
+        font-size: 16px;
+    }
 }
