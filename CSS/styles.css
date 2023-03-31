@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     height: 100%;
-    background-color: #e5dfff;
+    background-color: #d6d6d6;
     color: #101740;
 }
 
@@ -53,7 +53,11 @@ nav {
     font-weight: 600;
 }
 
-
+.separate {
+    background-color:#0D1226;
+    width: 100%;
+    height: 5vh;
+}
 
 .aboutme {
     display: grid;
@@ -85,6 +89,7 @@ img {
     align-items: center;
     text-align: center;
     padding: 20px;
+    margin: auto;
 }
 
 #intro {
@@ -106,6 +111,7 @@ img {
 
 .education a {
     color: #A62F24;
+    font-weight: 600;
 }
 
 #educ-heading {
@@ -122,12 +128,15 @@ img {
 
 .educ-dates {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    border-bottom: 1px solid #C17E87;
+    font-weight: 700;
 }
 
 .educ-items {
     text-align: left;
-    padding: 20px;
+    padding: 30px;
+    border-bottom: 1px solid #C17E87;
 }
 .educ-items ul {
     list-style-type:square ;
@@ -157,11 +166,14 @@ img {
 .exp-dates {
     text-align: center; 
     padding: 20px; 
+    border-bottom: 1px solid #C17E87;
+    font-weight: 700;
 }
 
 .exp-items {
     text-align: left; 
     padding: 20px;
+    border-bottom: 1px solid #C17E87;
 }
 
 .exp-items ul {
@@ -170,7 +182,7 @@ img {
 
 .skills {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 15% 42.5% 42.5%;
     grid-template-rows: 1;
     height: auto;
     border: 1px solid #C17E87;
@@ -195,18 +207,22 @@ img {
     text-align: left;
     padding: 20px;
 }
-
+.types ul {
+    list-style-type: square;
+}
 
 .contact {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    grid-template-rows: 1 ;
-    height: auto;
+    display: flex;
+    flex-direction: column;
     border: 1px solid #C17E87; 
 }
 
+.contact a {
+    color: #A62F24;
+    font-weight: 600;
+    font-size: 20px;
+}
 #contact-heading {
-    display: flex;
     align-items: center;
     text-align: center;
     background-color:#0D1226;
@@ -215,32 +231,57 @@ img {
     border: 1px solid #C17E87; 
 }
 
- .mode {
+/**** flex container for contact options ****/
+.details {
     display: flex;
-    flex-direction: column;
-    text-align: left ;
+    flex-direction: row;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
     justify-content: center;
-    padding: 20px;
- }
+    font-size: 18px;
+}
 
+/**** flex item for mode of communication ****/
+.type {
+    padding-right: 5vw;
+    text-align: left;
+}
 
+.answer {
+    text-align: left;
+}
+/**** make no bullets for list ****/
+.type ul li {
+    list-style-type: none;
+    padding-bottom: 2vh;
+}
+
+/**** make have bullets for list ****/
+.answer ul li {
+    list-style-type:square ;
+    padding-bottom: 2vh;
+}
+
+.contact {
+    text-align: center;
+}
 
 
 
 @media only screen and (max-width:768px) /**** mobile ****/
 {
 
+/*** make font smaller as screen size gets smaller ***/
     body {
         font-size: 12px;
     }
 
-    .aboutme {
-        grid-template-rows: auto;
-    }
+/*** make picture and intro paragraph wrap as screen gets smaller ***/
 
     #picture {
         grid-column: 2 / 4;
         grid-row: 1 / 2;
+        width: 200px;
     }
 
     #intro {
@@ -250,7 +291,50 @@ img {
 
     .options {
         font-size: 13px;
-        
+    }
+
+    .aboutme {
+        grid-template-columns: 20% 80%;
+    }
+    #about-heading {
+        font-size: 10px; 
+    }
+
+    .education {
+        grid-template-columns: 20% 30% 50%;
+    }
+
+    #educ-heading {
+        font-size: 10px; 
+    }
+    .educ-dates {
+        text-align: left;
+    }
+    .experience {
+        grid-template-columns: 20% 25% 55%;
+    }
+
+    #exp-heading {
+        font-size: 10px; 
+    }
+    .exp-dates {
+        text-align: left;
+    }
+
+    .skills {
+        grid-template-columns: 20% 80%;
+    }
+
+    #skills-heading {
+        font-size: 10px; 
+    }
+
+    .details {
+        font-size: 13px;
+    }
+
+    #contact-heading {
+        font-size: 12px; 
     }
 }
 
