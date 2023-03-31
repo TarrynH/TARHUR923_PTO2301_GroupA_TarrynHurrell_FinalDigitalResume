@@ -3,6 +3,7 @@ body {
     height: 100%;
     background-color: #d6d6d6;
     color: #101740;
+    z-index: 0;
 }
 
 .hero-image {
@@ -40,17 +41,20 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 15vh;
+    height: 13vh;
     align-items: center;
     background-color:#0D1226;
     position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .options {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    font-size: 18px;
+    font-size: 19px;
     color: aliceblue;
     font-weight: 600;
+
 }
 
 .separate {
@@ -81,6 +85,7 @@ nav {
 img {
     max-width: 100%;
     height: auto;
+    border: 3px solid #1e2852;
 }
 
 #picture {
@@ -128,14 +133,14 @@ img {
 
 .educ-dates {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     border-bottom: 1px solid #C17E87;
     font-weight: 700;
 }
 
 .educ-items {
     text-align: left;
-    padding: 30px;
+    padding: 40px;
     border-bottom: 1px solid #C17E87;
 }
 .educ-items ul {
@@ -165,14 +170,14 @@ img {
 
 .exp-dates {
     text-align: center; 
-    padding: 20px; 
+    padding: 30px; 
     border-bottom: 1px solid #C17E87;
     font-weight: 700;
 }
 
 .exp-items {
     text-align: left; 
-    padding: 20px;
+    padding: 30px;
     border-bottom: 1px solid #C17E87;
 }
 
@@ -205,7 +210,7 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding: 20px;
+    padding: 30px;
 }
 .types ul {
     list-style-type: square;
@@ -216,6 +221,7 @@ img {
     flex-direction: column;
     border: 1px solid #C17E87; 
 }
+
 
 .contact a {
     color: #A62F24;
@@ -266,7 +272,9 @@ img {
     text-align: center;
 }
 
-
+form {
+    padding-bottom: 30px;
+}
 
 @media only screen and (max-width:768px) /**** mobile ****/
 {
